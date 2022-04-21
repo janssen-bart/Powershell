@@ -1,20 +1,30 @@
 #
-class VMStandard {
-    [int]$CPU = 2
-    [int]$Memmory = 8
-    [int]$DiskSize = 256        
+class VMWareWorkstation {
+    
+    # Properties
+    [String]$DeviceName
+    [int]$CPU
+    [int]$Memmory
+    [int]$DiskSize
+    
+    # Constructors
+
+    # Methods
+
 }
 
 #
-class VMPerformant {
-    
+class Performant : VMWareWorkstation {
+    [int]$CPU = 2
+    [int]$Memmory = 8
+    [int]$DiskSize = 256    
 }
 
-class VMHighPerformant {
+class HighPerformant : VMWareWorkstation {
  
 #    
 }
 
-class VMCustom {
+class Standard : VMWareWorkstation {
     
 }
